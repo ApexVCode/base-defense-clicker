@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base Defense Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Base Defense Clicker</h1>
+
+    <div class="hud">
+      <div><strong>Coins:</strong> <span id="coins">0</span></div>
+      <div><strong>Wave:</strong> <span id="wave">1</span></div>
+      <div><strong>Base HP:</strong> <span id="baseHp">20</span></div>
+      <div><strong>Buildings:</strong> <span id="buildings">0</span></div>
+      <button id="buyBuilding">Build Tower (10 coins)</button>
+    </div>
+
+    <canvas id="game" width="900" height="500"></canvas>
+    <p class="hint">Each wave gets a new random winding path (normal enemies take ~7-9s to reach base). Click to damage enemies. Towers around your castle fire arrows at the closest enemy every 2s. Types: Normal (pink), Fast (yellow), Tank (blue, 3 HP).</p>
+    <p id="status"></p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
